@@ -351,7 +351,7 @@ a{
 	padding: 0;
 	vertical-align: auto !important;
 	display: block;
-	height: calc(100vh + 15px) !important;
+	height: calc(100vh - 15px) !important;
 }
 
 /*ixiletMeti v.1*/
