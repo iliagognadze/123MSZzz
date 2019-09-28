@@ -25,6 +25,10 @@ body, html {
 	background: #ffffff !important;
 }
 
+.fp-sr-only-orange{
+	background: #FF7000 !important;
+}
+
 .blue-color{
 	color: #000333 !important;
 }
@@ -502,8 +506,8 @@ a{
 
 #fp-nav ul li a.active span {
 	-webkit-box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
--moz-box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
-box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
+	-moz-box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
+	box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 }
 
 .services .card img{
@@ -889,15 +893,20 @@ box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 }
 
 
-.sixPage .card{
+.sixPage .card, .newCard{
 	height: 420px;
 	transition: all 0.6s ease;
 }
 
-.sixPage .card:hover{
+.sixPage .card:hover, .newCard:hover{
 	-webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
 	-moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
 	box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.35);
+}
+
+.newsImgBox{
+	height: 200px;
+	background-color: red;
 }
 
 
@@ -931,7 +940,7 @@ box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 	background-image: url('http://www.sonyamessier.com/wp-content/uploads/2015/11/truck-fog-sunrise-1170x780.jpg');
 }
 
-.sixPage .card{
+.sixPage .card, .newCard{
 	border-radius: 5px;
 }
 
@@ -1030,6 +1039,53 @@ box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 	}
 }
 
+.news-navbar{
+	background-color: #000516;
+}
+/*
+.newCard{
+	border-radius: 10px;
+	height: 470px;
+	padding: 0;
+	transition: all 0.6s ease;
+}*/
+
+.newsPage .card{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(255,112,0,0.35);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(255,112,0,0.35);
+	box-shadow: 0px 0px 10px 2px rgba(255,112,0,0.35);
+}
+
+.newsPage .card:nth-child(1) .newsImgBox{
+	background-image: url('https://cdn.vox-cdn.com/thumbor/wnTN-QCFVqYVeCPaztGkCj7UpiY=/0x0:4243x3079/1200x800/filters:focal(1783x1201:2461x1879)/cdn.vox-cdn.com/uploads/chorus_image/image/65022936/TuSimple_Self_Drving_Truck_4_copy.0.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.newsPage .card:hover{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(255,112,0,0.85);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(255,112,0,0.85);
+	box-shadow: 0px 0px 10px 2px rgba(255,112,0,0.85);
+}
+
+.newsPage{
+	background-image: none;
+	background-color: white;
+}
+
+.newsPage .container{
+	padding-top: 0px;
+}
+
+
+
+
+
+
+
+
+
 /*END OF SECTION TWO*/
 
 @media (max-width: 768px) {
@@ -1042,6 +1098,10 @@ box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 
 	.mobile{
 		display: block;
+	}
+
+	.fivePage, .firstPage{
+		padding-top: 15px !important;
 	}
 
 	.forNone{
@@ -1116,10 +1176,6 @@ box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 
 
 	/*two page*/
-	
-	.fivePage, .firstPage{
-		padding-top: 15px !important;
-	}
 
 	.two-page-none{
 		display: none;
@@ -1143,7 +1199,7 @@ box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 
 	.fp-sr-only-blue {
      background: white !important; 
-}
+	}
 	.twoPage .mobileServiceBtn,
 	.fourPage .mobileServiceBtn,
 	.sixPage .mobileServiceBtn{
@@ -1191,5 +1247,15 @@ box-shadow: 0px 0px 1px 4px rgba(175,175,175,1);
 @media (max-width: 320px) {
 	.firstPage .mobileServiceBtn span{
 		text-align: end;
+	}
+}
+
+@media (max-width: 1024px) {
+	.navbar-right{
+		display: none;
+	}
+
+	#calcBox form label:first-child span{
+		top: -55px !important;
 	}
 }
