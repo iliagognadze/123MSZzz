@@ -1326,8 +1326,7 @@ a{
 	}
 	
 	.fourPage .mobileServiceBtn:nth-child(1),
-	.fourPage .mobileServiceBtn:nth-child(2),
-	.fourPage .mobileServiceBtn:nth-child(3){
+	.fourPage .mobileServiceBtn:nth-child(2){
 		display: none !important;
 	}
 
@@ -1450,5 +1449,10 @@ footer{
 @media (max-width: 320px){
 	.ship-service{
 		font-size: 24px !important;
+	}
+	
+	.fourPage .mobileServiceBtn:nth-child(1),
+	.fourPage .mobileServiceBtn:nth-child(2){
+		display: none !important;
 	}
 }
